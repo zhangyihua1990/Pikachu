@@ -6,6 +6,7 @@
 body {
   height: 100vh;
   border: 1px solid black;
+  background: yellow;
 }
 body {
   display: flex;
@@ -59,6 +60,24 @@ body {
   left: 50%;
   margin-left: 90px;
 }
+.face {
+  width: 68px;
+  height: 68px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: #fc0d1c;
+  position: absolute;
+  top: 85px;
+}
+.face.left {
+  right: 50%;
+  margin-right: 116px;
+}
+.face.right {
+  left: 50%;
+  margin-left: 116px;
+}
+
 
 
 
