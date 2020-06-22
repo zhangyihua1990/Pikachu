@@ -1,0 +1,53 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  border: 1px solid black;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 100%;
+  height: 165px;
+  border: 1px solid red;
+  position: relative;
+}
+.nose {
+  height: 0;
+  width: 0;
+  border-width: 12px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black transparent transparent;
+  position: absolute;
+  left: 50%;
+  top: 28px;
+  margin-left: -12px;
+}
+.eye {
+  width: 49px;
+  height: 49px;
+  background: #2e2e2e;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+.eye.left {
+  /**绝对定位和margin-right可以一起使用卍**/
+  right: 50%;
+  margin-right: 90px;
+}
+.eye.right {
+  left: 50%;
+  margin-left: 90px;
+}
+
+
+
+/*# sourceMappingURL=/Pikachu.9ad09f98.css.map */

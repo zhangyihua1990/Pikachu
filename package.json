@@ -1,0 +1,8 @@
+{
+  "name": "Pikachu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:zhangyihua1990/Pikachu.git",
+  "author": "zack <zhangyihua90s@qq.com>",
+  "license": "MIT"
+}
