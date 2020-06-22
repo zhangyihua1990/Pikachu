@@ -38,6 +38,18 @@ body {
   border-radius: 50%;
   border: 2px solid #000000;
 }
+.eye::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  background: white;
+  position: absolute;
+  left: 6px;
+  top: -1px;
+}
 .eye.left {
   /**绝对定位和margin-right可以一起使用卍**/
   right: 50%;
