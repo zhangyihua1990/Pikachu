@@ -127,17 +127,21 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     var id = setInterval(function () {
       n += 1;
       container.innerHTML = code.substring(0, n);
-      styleTag.innerHTML = code.substring(0, n);
+      styleTag.innerHTML = code.substring(0, n); // element.scrollTop为元素滚动条内的顶部隐藏部分的高度卍；
+      // element.scrollHeight元素滚动条内的内容高度卍；
+      // console.log(container.scrollTop-container.scrollHeight);
+
+      container.scrollTop = container.scrollHeight;
 
       if (n >= code.length) {
         window.clearInterval(id);
         fn && fn.call();
       }
-    }, 100);
+    }, 10);
   }
 
-  var code = "\n  ";
-  writeCode('', '1234512345');
+  var code = ".preview {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.wrapper {\n  width: 100%;\n  height: 165px;\n  /*border: 1px solid red;*/\n  position: relative;\n}\n.nose {\n  height: 0;\n  width: 0;\n  border-width: 12px;\n  border-radius: 10px;\n  border-style: solid;\n  border-color: black transparent transparent;\n  position: absolute;\n  left: 50%;\n  top: 28px;\n  margin-left: -12px;\n}\n.eye {\n  width: 49px;\n  height: 49px;\n  background: #2e2e2e;\n  position: absolute;\n  border-radius: 50%;\n  border: 2px solid #000000;\n}\n.eye::before {\n  content: '';\n  display: block;\n  width: 24px;\n  height: 24px;\n  border-radius: 50%;\n  border: 2px solid #000000;\n  background: white;\n  position: absolute;\n  left: 6px;\n  top: -1px;\n}\n.eye.left {\n  /**\u7EDD\u5BF9\u5B9A\u4F4D\u548Cmargin-right\u53EF\u4EE5\u4E00\u8D77\u4F7F\u7528\u534D**/\n  right: 50%;\n  margin-right: 90px;\n}\n.eye.right {\n  left: 50%;\n  margin-left: 90px;\n}\n.face {\n  width: 68px;\n  height: 68px;\n  border: 2px solid black;\n  border-radius: 50%;\n  background: #fc0d1c;\n  position: absolute;\n  top: 85px;\n}\n.face.left {\n  right: 50%;\n  margin-right: 116px;\n}\n.face.right {\n  left: 50%;\n  margin-left: 116px;\n}\n.upperLip {\n  height: 20px;\n  width: 80px;\n  border: 3px solid black;\n  position: absolute;\n  top: 52px;\n  background: #fde348;\n}\n.upperLip.left {\n  right: 50%;\n  border-bottom-left-radius: 40px 20px;\n  border-top: none;\n  border-right: none;\n  transform: rotate(-22deg)\n}\n.upperLip.right {\n  left: 50%;\n  border-bottom-right-radius: 40px 20px;\n  border-top: none;\n  border-left: none;\n  transform: rotate(22deg)\n}\n.lowerLip-wrapper {\n  position: absolute;\n  height: 125px;\n  width: 300px;\n  bottom: -17px;\n  left: 50%;\n  margin-left: -150px;\n  /*z-index: -1;*/\n  /*border: 1px solid red;*/\n  overflow: hidden;\n}\n.lowerLip {\n  height: 300px;\n  width: 100px;\n  background: #990513;\n  border-radius: 50px/150px;\n  border: 2px solid black;\n  position: absolute;\n  bottom: 0;\n  left: 50%;\n  margin-left: -50px;\n  overflow: hidden;\n}\n.lowerLip::after {\n  content: '';\n  position: absolute;\n  bottom: -5px;\n  width: 100px;\n  height: 100px;\n  background: #fc4a62;\n  left: 50%;\n  margin-left: -50px;\n  border-radius: 50px;\n} \n  ";
+  writeCode('', code);
 }.call();
 },{}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -167,7 +171,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55549" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65221" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
