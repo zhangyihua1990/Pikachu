@@ -29,7 +29,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -41,7 +44,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592810950290</updated>
-      <workItem from="1592810953080" duration="22290000" />
+      <workItem from="1592810953080" duration="25153000" />
+      <workItem from="1593314268324" duration="577000" />
+      <workItem from="1593314874928" duration="162000" />
+      <workItem from="1593315058308" duration="916000" />
+      <workItem from="1593316070399" duration="54000" />
+      <workItem from="1593316146595" duration="4523000" />
     </task>
     <servers />
   </component>
@@ -49,14 +57,22 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="600" y="305" width="484" height="313" key="#Notifications" timestamp="1592810976973">
+    <state x="600" y="305" width="484" height="313" key="#Notifications" timestamp="1593315169855">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="600" y="305" width="484" height="313" key="#Notifications/0.23.1440.877@0.23.1440.877" timestamp="1592810976973" />
-    <state x="221" y="100" key="SettingsEditor" timestamp="1592969870290">
+    <state x="600" y="305" width="484" height="313" key="#Notifications/0.23.1440.877@0.23.1440.877" timestamp="1593315169855" />
+    <state x="555" y="169" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593315868831">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1592969870290" />
+    <state x="555" y="169" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877@0.23.1440.877" timestamp="1593315868831" />
+    <state x="308" y="203" key="IDE.errors.dialog" timestamp="1593318633147">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="308" y="203" key="IDE.errors.dialog/0.23.1440.877@0.23.1440.877" timestamp="1593318633147" />
+    <state x="369" y="63" key="SettingsEditor" timestamp="1593319183333">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="369" y="63" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593319183333" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1592835080091">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
