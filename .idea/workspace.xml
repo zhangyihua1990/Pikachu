@@ -29,6 +29,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -49,7 +50,7 @@
       <workItem from="1593314874928" duration="162000" />
       <workItem from="1593315058308" duration="916000" />
       <workItem from="1593316070399" duration="54000" />
-      <workItem from="1593316146595" duration="4523000" />
+      <workItem from="1593316146595" duration="6545000" />
     </task>
     <servers />
   </component>
@@ -69,10 +70,14 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="308" y="203" key="IDE.errors.dialog/0.23.1440.877@0.23.1440.877" timestamp="1593318633147" />
-    <state x="369" y="63" key="SettingsEditor" timestamp="1593319183333">
+    <state x="369" y="63" key="SettingsEditor" timestamp="1593402164809">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="369" y="63" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593319183333" />
+    <state x="369" y="63" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593402164809" />
+    <state x="385" y="211" key="run.anything.popup" timestamp="1593401981546">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="211" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1593401981546" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1592835080091">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
