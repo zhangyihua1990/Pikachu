@@ -7,10 +7,10 @@
       .siblings('.active').removeClass('active')
     switch (speed) {
       case 'slow':
-        duration = 100
+        duration = 1000
         break
       case 'normal':
-        duration = 50
+        duration = 100
         break
       case 'fast':
         duration = 10
@@ -21,9 +21,9 @@
   function writeCode(prefix, code, fn) {
     let container = document.querySelector('#code')
     let styleTag = document.querySelector('#styleTag')
-    console.log(styleTag);
+    // console.log(styleTag);
     let n = 0
-    setTimeout(function run() {
+    let id = setTimeout(function run() {
       n += 1
       container.innerHTML = code.substring(0, n)
       styleTag.innerHTML = code.substring(0, n)
@@ -32,8 +32,9 @@
       // console.log(container.scrollTop-container.scrollHeight);
       container.scrollTop = container.scrollHeight
       if (n < code.length) {
-        setTimeout(run, duration)
+        id = setTimeout(run, duration)
       } else {
+        window.clearTimeout(id)
         fn && fn.call()
       }
     }, duration)

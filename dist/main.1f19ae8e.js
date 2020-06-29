@@ -127,11 +127,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
     switch (speed) {
       case 'slow':
-        duration = 100;
+        duration = 1000;
         break;
 
       case 'normal':
-        duration = 50;
+        duration = 100;
         break;
 
       case 'fast':
@@ -142,10 +142,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   function writeCode(prefix, code, fn) {
     var container = document.querySelector('#code');
-    var styleTag = document.querySelector('#styleTag');
-    console.log(styleTag);
+    var styleTag = document.querySelector('#styleTag'); // console.log(styleTag);
+
     var n = 0;
-    setTimeout(function run() {
+    var id = setTimeout(function run() {
       n += 1;
       container.innerHTML = code.substring(0, n);
       styleTag.innerHTML = code.substring(0, n); // element.scrollTop为元素滚动条内的顶部隐藏部分的高度卍；
@@ -155,8 +155,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
       container.scrollTop = container.scrollHeight;
 
       if (n < code.length) {
-        setTimeout(run, duration);
+        id = setTimeout(run, duration);
       } else {
+        window.clearTimeout(id);
         fn && fn.call();
       }
     }, duration); // let id = setInterval(() => {
@@ -205,7 +206,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50409" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57177" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
